@@ -45,3 +45,25 @@ Example without animations:
 
 Example of the full circle:
 ![Full Circle Example](./FullCircle.gif)
+
+## Potential Component
+
+Here's a thought of what the component that would solve this issue would look like:
+
+`MasterPage`, `DetailPage`, and `SubDetailPage` are all using the typical `IonPage`.
+
+```
+    <SplitRouterOutlet
+      master={MasterPage}
+      detailRoutes={[
+        {
+          path: '/detail',
+          Component: DetailPage,
+        },
+        {
+          path: '/detail/:subPage',
+          Component: SubDetailPage,
+        },
+      ]}
+    />
+```
