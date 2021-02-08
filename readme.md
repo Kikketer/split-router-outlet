@@ -25,7 +25,7 @@ All of these usecases require the following:
 4. Expect the Information to be presented in the Detail panel on the right while Cards are presented in the Summary on the left.
 
 Example without animations:
-![Example Without Animations]()
+![Small to Large Example](./SmallToLarge.gif)
 
 ### Usecase 2
 
@@ -35,3 +35,13 @@ Example without animations:
 4. Expect the Information to be presented full screen Detail
 5. User then taps the resulting "Back" button which would dynamically appear based on screen size.
 6. Expect the IonRouterOutlet animation to hide this Detail panel and show the Master panel with the Cards
+
+Example without animations:
+![Large to Small Example](./LargeToSmall.gif)
+
+### Usecase 3
+
+1. Run Usecase 1 then Usecase 2 without reloading or refreshing.
+
+Example of the full circle:
+![Full Circle Example](./FullCircle.gif)
